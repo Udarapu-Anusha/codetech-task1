@@ -1,62 +1,103 @@
-<br>Name:ANUSHA UDARAPU</br>
-<br>Company:CODTECH IT SOLUTIONS</br>
-<br>ID:CT4PP3673</br>
-<br>Domain:Python Programming</br>
-<br>Duration:July to August 2024</br>
-<br>Mentor:SRAVANI GOUNI</br>
+<h2>Intern</h2>
+<b>Name:</b> Udarapu Anusha<br>
+<b>Collage:</b> NRI Institute of technology<BR>
+<b>Roll No:</b>22KP1A44D8<BR>
+<b>Company:</b>CODTECH IT SOLUTIONS<BR>
+<b>ID:</b>CT4PP3673<BR>
+<b>Domain:</b>PYTHON PROGRAMMING<BR>
+<b>Duration:</b> JULY TO AUGUST 2024<BR>
+<b>Mentor:</b>SRAVANI GOUNI<BR>
 
-<br>Overview of the project:</br>
-<br>PROJECT: Basic Calculator</br>
-        <br>Purpose:</br> 
-                 The project's purpose is to create a simple calculator program that allows users to perform basic arithmetic operations on two numbers.
-<br>Components:</br>
-<br>Main Function (calculator()):</br>
-<br>This function serves as the core of the calculator program.</br>
-<br>It first welcomes the user and displays available operations: addition, subtraction, multiplication, and division.#It then prompts the user to enter two numbers and select an operation.</br>
-<br>Depending on the operation chosen, it performs the corresponding arithmetic operation</br>
-<br>It handles edge cases such as division by zero by providing an error message.</br>
+<h2>Simple Calculator Project Overview</h2>
+<b>Sample Code:</b><br>
+<pre>
+  
+#Define a function for each operation
+def add(x, y):
+  return x + y
 
-<br>Input Handling:</br>
-<br>Uses input() function to collect user inputs for numbers and operation choice.</br>
-<br>Converts user inputs from strings to floating-point numbers for numerical operations.</br>
-<br>Handles potential ValueError exceptions if non-numeric inputs are entered.</br>
+def sub(x, y):
+  return x - y
 
-<br>Operations:</br>
-<br>Performs addition (+), subtraction (-), multiplication (*), and division (/) based on the user's selection.</br>
-<br>Outputs the result of the operation in a formatted string.</br>
+def mul(x, y):
+  return x * y
 
-<br>Error Handling:</br>
-<br>Checks for division by zero before performing division.</br>
-<br>Displays an error message if invalid inputs are detected (e.g., non-numeric values for numbers or incorrect operation choice).</br>
+def div(x, y):
+  if y == 0:
+    return "Error: Division by zero is not allowed"
+  return x / y
+  
+#Main program
+print("Simple Calculator")
+print("----------------")
 
-<br>Execution:</br>
-<br>The program is executed as a standalone script (if __name__ == "__main__":).</br>
-<br>It runs the calculator() function, which orchestrates user interaction, calculation, and result display.</br>
+#Get the two numbers from the user
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 
-<br>User Experience:</br>
-<br>Users are guided through a series of prompts to enter numbers and select an operation.</br>
-<br>The program calculates the result based on the chosen operation and provides immediate feedback to the user.</br>
+#Get the operation from the user
+print("Choose an operation:")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+op = int(input("Enter your choice (1/2/3/4): "))
 
-<br>Functionality:</br>
-<br>Provides basic arithmetic operations (addition, subtraction, multiplication, division).</br>
-<br>Handles typical user interactions and errors gracefully to ensure smooth operation.</br>
-
-<br>Implementation:</br>
-<br>Written in Python, making use of basic input/output operations (print() and input()).</br>
-<br>Uses conditional statements (if-elif-else) to determine the operation to perform based on user input.</br>
-<br>Includes error handling to manage potential exceptions and ensure robust behavior.</br>
-
-<br>Output:</br>
-<br>![Screenshot 2024-07-14 132335](https://github.com/user-attachments/assets/5401ab77-81a0-4c0c-98d8-835d32b1869f)</br>
-
-
-<br>Conclusion:</br>
-                  <br>This project serves as a foundational example of creating a simple calculator in Python. It demonstrates fundamental programming concepts such as user input handling, arithmetic operations, conditional statements, error handling, and function-based organization. It provides a practical tool for performing basic calculations and serves as a starting point for more complex calculator applications or interactive Python projects.</br>
-
-
-
-
+#Perform the operation
+if op == 1:
+  result = add(num1, num2)
+elif op == 2:
+  result = sub(num1, num2)
+elif op == 3:
+  result = mul(num1, num2)
+elif op == 4:
+  result = div(num1, num2)
+else:
+  result = "Error: Invalid operation"
+  
+#Display the result
+print("Result:", result)
+</pre><br>
+# OutPut
+![image](https://github.com/user-attachments/assets/8265ab10-35bb-4602-8141-8c09549c13e9)
 
 
+<br>
+<h2>Objective:</h2><br>
+The objective of this project is to create a basic calculator that can perform fundamental arithmetic operations such as addition, subtraction, multiplication, and division. This project demonstrates the use of Python programming for developing a user-friendly and functional calculator.<br>
 
+<h2>Features:</h2>
 
+<b>User Interface:</b><br>
+The calculator provides a simple text-based user interface.
+Users can input two numbers and choose an operation to perform.<bR>
+
+<b>Arithmetic Operations:</b><br>
+Addition: Adds two numbers.
+Subtraction: Subtracts the second number from the first.
+Multiplication: Multiplies two numbers.
+Division: Divides the first number by the second, with a check to prevent division by zero.<br>
+
+<b>Error Handling:</b><br>
+Handles invalid inputs and prompts the user to enter valid numbers.
+Includes error messages for division by zero and other invalid operations.<br>
+
+<h2>Implementation:</h2>
+The project is implemented using basic Python programming constructs, such as functions, conditional statements, and loops. Below is a brief outline of the code structure:
+<br>
+
+<b>Function Definitions:</b><br>
+Functions for each arithmetic operation: add(), subtract(), multiply(), and divide().
+A function to display the menu and get the user's choice of operation.
+A main function to drive the program and handle user input and output.<br>
+
+<b>User Input and Output:</b><br>
+The program prompts the user to enter two numbers.
+It displays a menu of operations and asks the user to choose one.
+Based on the user's choice, it calls the corresponding function to perform the operation and displays the result.<br>
+
+<b>Main Loop:</b><br>
+The program runs in a loop, allowing the user to perform multiple calculations until they choose to exit.<br>
+
+<h2>Conclusion:</h2><br>
+This simple calculator project is an excellent way to practice and understand basic Python programming concepts. It can be expanded with additional features, such as more complex operations, a graphical user interface (GUI), or enhanced error handling.
