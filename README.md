@@ -59,7 +59,7 @@ else:
 print("Result:", result)
 </pre><br>
 # OutPut
-"C:\Users\anush\Downloads\it1.mp4"
+
 <br>
 <h2>Objective:</h2><br>
 The objective of this project is to create a basic calculator that can perform fundamental arithmetic operations such as addition, subtraction, multiplication, and division. This project demonstrates the use of Python programming for developing a user-friendly and functional calculator.<br>
